@@ -1,0 +1,273 @@
+html {
+    scroll-behavior: smooth;
+  }
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+} 
+
+.title {
+    text-align: left;
+    padding: 3%;
+    font-family: "Lato";
+    font-size: 90px;
+    color: teal;
+}
+
+.scroll-text {
+    display: flex;
+    justify-content: center;
+    font-family: "Lato";
+    font-size: 22px;
+    color: #de6e4b;
+}
+  
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    font-family: "Lato";
+    font-size: 20px; 
+    color: teal;
+    padding: 2%;
+}
+
+.myfooter {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 2%;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 7%;
+}
+
+i.fa {
+    display: inline-block;
+    border-radius: 60px;
+    padding: 0.5em 0.6em;
+    color: white;
+    background-color: #de6e4b;
+    width: 28px;
+    text-align: center;
+  
+  }
+
+i.fa.fa-angle-down {
+
+    display: inline-block;
+    border-radius: 60px;
+    padding: 0.5em 0.6em;
+    color: white;
+    background-color: #de6e4b;
+    width: 40px;
+    text-align: center;
+
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    margin: auto;
+}
+
+
+li {
+    margin: 20px;
+}
+
+.bg-custom {
+    background-color: white;
+}
+
+nav .navbar-nav li a{
+    color: #20B2AA!important;
+}
+
+nav .navbar-brand{
+    color: #20B2AA!important;
+    padding-left: 1%;
+}
+.typewrite {
+    color: #20B2AA;
+    font-family: 'Lato';
+    display: flex;
+    justify-content: left;
+    text-align: justify;
+    font-size: 90px;
+    text-decoration: none;
+    padding-bottom: 7%;
+    padding-left: 3%;
+}
+
+.typewrite:hover {
+    color:#20B2AA;
+    text-decoration: none;
+}
+
+.my-work {
+    background-color: #011627; /*#2f323a; #1E1E24*/
+
+}
+
+.projects {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    width: 100%;
+    padding: 10%;
+}
+
+.single-project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card-title {
+    font-family: 'Lato';
+    letter-spacing: 10px;
+    padding-bottom: 5%;
+}
+
+.card-text {
+    font-family: 'Lato';
+    padding-bottom: 3%;
+    font-size: 16px;
+}
+
+.card-link {
+    font-family: 'Lato';
+    color: #20B2AA;
+    font-size: 16px;
+}
+
+.card-link:hover {
+    color:white;
+}
+
+.project-image {
+    padding-bottom: 20%;
+    padding-right: 2%;
+}
+
+.project-image:hover{ 
+    position: relative; 
+    top: -10px;
+    
+} 
+
+img:hover {
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px 2px white;
+}
+
+
+@media only screen and (max-width: 770px) { /* tablet size */
+
+    .title {
+        font-size: 50px;
+    }
+
+    .typewrite {
+        font-size: 50px;
+
+    }
+}
+
+@media only screen and (max-width: 450px) { /* mobile size */
+
+    .title {
+        font-size: 24px;
+    }
+
+    .typewrite {
+        font-size:24px;
+
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar .navbar-toggler-icon {
+        background-image: url('https://mdbootstrap.com/img/svg/hamburger2.svg?color=fff');
+    }
+
+    .copyright {
+        font-size: 16px;
+        padding: 2%;
+    }
+
+    .social {
+        font-size: 12px;
+        padding: 2%;
+    }
+
+    .container-flex {
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
+    }
+
+    i.fa {
+        display: inline-block;
+        border-radius: 60px;
+        padding: 0.5em 0.6em;
+        color: white;
+        background-color: #de6e4b;
+        width: 24px;
+        text-align: center;
+      
+      }
+
+      i.fa.fa-angle-down {
+
+        display: inline-block;
+        border-radius: 60px;
+        padding: 0.5em 0.6em;
+        color: white;
+        background-color: #de6e4b;
+        width: 40px;
+        text-align: center;
+    
+    }
+
+    .scroll-text {
+        display: flex;
+        justify-content: center;
+        font-family: "Lato";
+        font-size: 16px;
+        color: #de6e4b;
+    }
+
+    .single-project {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .project-text {
+        order: 1;
+    }
+
+    .project-image {
+        order: 2;
+    }
+
+    img {
+        width: 95%;
+    }
+
+}

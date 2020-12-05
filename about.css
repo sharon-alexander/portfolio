@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+} 
+
+.title {
+    text-align: left;
+    padding-bottom: 5%;
+    font-family: "Lato";
+    font-size: 50px;
+    color: teal;
+}
+
+.text {
+    font-family: "Lato";
+    font-size: 20px;
+    text-align: justify;
+    padding-left: 5%;
+
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    font-family: "Lato";
+    font-size: 20px; 
+    color: teal;
+    padding: 2%;
+}
+
+.myfooter {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 2%;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 7%;
+}
+
+i.fa {
+    display: inline-block;
+    border-radius: 60px;
+    padding: 0.5em 0.6em;
+    color: white;
+    background-color: #de6e4b;
+    width: 28px;
+    text-align: center;
+  
+  }
+
+img {
+    /* border-radius: 20px; bring back after pic  */
+    width: 580px;
+
+  }
+
+li {
+    margin: 20px;
+}
+
+.bg-custom {
+    background-color: white;
+}
+
+nav .navbar-nav li a{
+    color: #20B2AA!important;
+}
+
+nav .navbar-brand{
+    color: #20B2AA!important;
+    padding-left: 1%;
+}
+
+.main-container {
+    padding: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%; 
+}
+
+
+
+@media only screen and (max-width: 450px) { /* mobile size */
+
+    .main-container {
+        grid-template-columns: 1fr;
+        padding: 10%;
+    }
+    .text {
+        order: 1;
+        padding-bottom: 10%;
+        padding-left: 0%;
+    }
+
+    .my-image {
+        order: 2;
+    }
+
+    img {
+        width: 300px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+
+    .copyright {
+        font-size: 16px;
+        padding: 2%;
+    }
+
+    .social {
+        font-size: 12px;
+        padding: 2%;
+    }
+
+    .container-flex {
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
+    }
+
+    i.fa {
+        display: inline-block;
+        border-radius: 60px;
+        padding: 0.5em 0.6em;
+        color: white;
+        background-color: #de6e4b;
+        width: 24px;
+        text-align: center;
+      
+      }
+
+}
