@@ -64,6 +64,7 @@ i.fa {
 img {
     /* border-radius: 20px; bring back after pic  */
     width: 580px;
+    display: flex;
 
   }
 
