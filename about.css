@@ -92,6 +92,36 @@ nav .navbar-brand{
     width: 100%; 
 }
 
+hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 90%;               
+    background-color:#20B2AA;
+    height: 1px;
+}
+
+@media only screen and (max-width: 770px) { /* tablet size */
+
+    img {
+        width: 330px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .copyright {
+        font-size: 14px;
+        padding: 2%;
+    }
+
+}
+
 
 
 @media only screen and (max-width: 450px) { /* mobile size */
