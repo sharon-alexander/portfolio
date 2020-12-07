@@ -92,14 +92,6 @@ nav .navbar-brand{
     width: 100%; 
 }
 
-hr {
-    border: 0;
-    clear:both;
-    display:block;
-    width: 90%;               
-    background-color:#20B2AA;
-    height: 1px;
-}
 
 @media only screen and (max-width: 770px) { /* tablet size */
 
