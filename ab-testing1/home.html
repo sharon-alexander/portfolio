@@ -1,0 +1,266 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <title>a/b testing</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <!-- top navbar -->
+  <nav class="navbar navbar-expand-sm navbar-light bg-light text-info">
+    <div class="container-fluid">
+      <a class="navbar-brand">
+        <h1>&hearts; </h1>
+      </a>
+
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+        style="border: none;">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="navbar-item"> <a href="../home.html">projects </a></li>
+          <li class="navbar-item"> <a href="../about.html">about me </a></li>
+          <li class="navbar-item"> <a href="../fake-resume.pdf" target="_blank">resume </a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- title -->
+  <div class="title">
+    a/b testing + statistical analysis
+  </div>
+
+  <!-- project menu -->
+  <div class="project-menu">
+    <nav class="navbar navbar-expand-sm navbar-light text-info">
+      <div class="container-fluid">
+
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#projectMenuContent"
+          aria-controls="projectMenuContent" aria-expanded="false" aria-label="Toggle navigation" style="border: none;">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="projectMenuContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="navbar-item"> <a class="nav-link text-info" href="#context">context </a></li>
+            <li class="navbar-item"> <a class="nav-link text-info" href="#website-versions">website versions
+              </a></li>
+            <li class="navbar-item"> <a class="nav-link text-info" href="#hypotheses">hypotheses</a></li>
+            <li class="navbar-item"> <a class="nav-link text-info" href="#data-collection">data collection</a></li>
+            <li class="navbar-item"> <a class="nav-link text-info" href="#data-analysis-conclusions">data analysis +
+                conclusions</a>
+            </li>
+            <li class="navbar-item"> <a class="nav-link text-info" href="#takeaways">takeaways</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+  <!-- context -->
+  <div class="subtitle" id="context">
+    context
+  </div>
+  <div class="paragraph">
+    <p>
+      This morning, as I was waiting for my coffee to brew, I opened up instagram and noticed that the interface was
+      different. New features, such as instagram shop,
+      were added and the "search" and "activity" icons were moved to the top of the page. I struggled to find the search
+      icon
+      for like, 10 seconds! Annoying. When my roommate woke up,
+      I expressed my frustration and she told me that her interface hadn't changed yet. This, my friends, is a classic
+      example of A/B testing. <br> <br>
+
+      <b> A/B testing involves showing two different versions of a webpage to webpage visitors and then comparing the
+        two to see which performs better. </b> A version's performance
+      can be evaluated using a number of different metrics, such as measuring the time taken to complete a task. <br>
+      <br>
+
+      For this project, I created two versions of an online cactus shop. In this article, I'm going to walk you through
+      the two versions I made, how I collected user data, and how I
+      evaluated their performance based on two metrics: <b> time to completion</b> and <b> return rate </b>(explained
+      below). <br> <br> Let’s get started!
+    </p>
+
+  </div>
+
+  <!-- website versions -->
+  <div class="subtitle" id="website-versions">
+    website versions
+  </div>
+  <div class="paragraph">
+    <p>The two versions of my website can be viewed <a href="https://guarded-scrubland-58294.herokuapp.com/">here</a>
+      (the link will randomly
+      display either version A or B).</p>
+  </div>
+  <div class="heading"><b>version A </b> </div>
+  <div class="image">
+    <img src="versionA.png" alt="version A" width="1000">
+  </div>
+
+  <div class="paragraph"> Notice how in version A, the "Add To Cart", button is on the right of the image. </div>
+
+
+  <div class="heading"> <b> version B</b></div>
+
+  <div class="image">
+    <img src="versionB.png" alt="version B" width="1000">
+  </div>
+
+  <div class="paragraph"> Notice how in version B, the "Add To Cart", button is below the image. </div>
+
+  <!-- hypothesis -->
+  <div class="subtitle" id="hypotheses">
+    hypotheses
+  </div>
+  <div class="paragraph">
+    <p>
+      Once I created version A and version B of the website, I made a series of hypotheses on how the two versions would
+      perform.
+      Regardless of which version a user gets, their task was to <b>fill their cart with at least $150 of
+        cacti. </b> The performance of each version was measured using two metrics:
+    </p>
+  </div>
+  <div class="summary">
+    <ul>
+      <li> <b> time to completion:</b> the time it takes to fill a cart with at least $150 of cacti)</li>
+      <li><b> return rate: </b>the number of times a user returned to the browsing page from the checkout page</li>
+    </ul>
+  </div>
+
+  <div class="heading"><b>time to completion hypothesis</b></div>
+  <div class="paragraph">
+    <p><b>Null:
+      </b>the time to completion of version A will <b>be equal </b>to that of version B.
+      <br> <br>
+      <b>Alternative:</b> The time to completion of version B will be <b>lower </b>than that of version A because
+      version
+      B has a
+      clearer layout.
+      Since it is clearer, the user will complete the task faster.
+    </p>
+  </div>
+
+  <div class="heading"><b>return rate hypothesis</b></div>
+  <div class="paragraph"><b>
+      <p>Null:
+    </b>the return rate of version A will <b>be equal </b>to that of version B.
+    <br> <br>
+    <b>Alternative:</b> The return rate of version A will <b>not be equal </b>to the return rate of version B because
+    version B has a
+    clearer layout.
+    Since the task is to add cacti to a cart, one could argue that you don't want the user to be returning to the browse
+    page. You want the user to fill their cart with at least $150 of cacti and that's it.
+    </p>
+  </div>
+
+  <!-- data collection -->
+  <div class="subtitle" id="data-collection">
+    data collection
+  </div>
+  <div class="paragraph">
+    <p>In order to collect user data, I sent out my website link to friends and peers in my UI/UX class at Brown
+      University. As mentioned earlier, the link
+      randomly displays either version A or B. Every time a user would carry out the task, I received a data log which
+      included timestamps of when the user loaded the webpage, clicked
+      on any "Add To Cart" button, and whether the user clicked on "CART" at any point to navigate to the checkout
+      page.<br> <br>
+      Once I had the data logs from all the users, I transferred the data
+      to a CSV file for data cleaning. This involved removing outliers and removing logs from users who just navigated
+      to my webpage but didn't do anything.
+    </p>
+  </div>
+
+  <!-- data analysis + conclusions -->
+  <div class="subtitle" id="data-analysis-conclusions">
+    data analysis + conclusions
+  </div>
+  <div class="paragraph">
+    <p>
+      Once the data was cleaned, I was able to calculate time to completion by subtracting the timestamp of the initial
+      page load time from the timestamp of the last action the user performed.
+      I measured return rate by checking whether each user <i> returned </i> to the browsing after having gone to the
+      checkout page. Finally, I was ready to run statistical tests on the data.
+    </p>
+  </div>
+  <div class="heading"><b>time to completion: t-test</b></div>
+  <div class="paragraph">
+    <p> I calculated the average time to completion for all the version A users and then all the version B users. In
+      order to see whether
+      there was a statistically significant difference between the two means, I conducted a t-test. However, in order to
+      draw conclusions from the t-test,
+      the p-value must be below 0.05. Since the p-value obtained from my t-test was 0.362, the difference between the
+      time to completion of version A and that
+      of version B is <b>not statistically significant.</b> Therefore, we must <b>fail to reject the null hypothesis
+      </b>, which was that the time to completion of version A will be equal to that of version B.</p>
+  </div>
+
+  <div class="heading"><b>return rate: chi-squared test</b></div>
+  <div class="paragraph">
+    <p> Since return rate is categorical data (i.e. a user either returned or didn't), I conducted a chi-squared test to
+      compare the percentage of users who returned in version A to the percentage of users
+      who returned in version B. Once again, since the p-value of the test was 0.445 (which is greater than 0.05), the
+      difference between the return rate of version A and that of B is <b> not statistically significant.</b>
+      Therefore, we must <b> fail to reject the null hypothesis</b>, which was that the return rate of version A will be
+      equal to that of version B.</p>
+  </div>
+
+  <div class="heading"><b>infographic</b></div>
+  <div class="image">
+    <img src="infographic.svg" alt="infographic" width="700">
+  </div>
+
+  <!-- takeaways-->
+  <div class="subtitle" id="takeaways">
+    takeaways
+  </div>
+  <div class="summary" style="font-size: 18px">
+    <ul>
+      <li> Unfortunately, since both the t-test and chi-squared test were not statistically significant, I could not
+        draw any conclusions on how the design differences between version A and version B affected each version's
+        performance. </li>
+      <li> I think the major limitation in this study was the small sample size of users and the fact that all of the
+        participating users were Brown students. In order to obtain more accurate results,
+        I would conduct the same test on a larger group of users across different demographics (e.g. different age
+        groups, occupations etc.) </li>
+    </ul>
+  </div>
+  <div>
+    <hr>
+  </div>
+  <footer class="myfooter">
+    <div class="copyright"> coded with &hearts; | anonymous</div>
+    <div class="social">
+      <a href=""><i class="fa fa-facebook"></i></a>
+      &nbsp;<a href=""><i class="fa fa-instagram"></i></a>
+      &nbsp;<a href=""><i class="fa fa-linkedin"></i></a></div>
+  </footer>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+  <!-- Bootstrap tooltips --> 
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>  
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script> 
+  <!-- Bootstrap core JavaScript --> 
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script> 
+  <!-- MDB core JavaScript --> 
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+</body>
+
+</html>

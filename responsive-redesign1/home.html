@@ -1,0 +1,285 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <title>website redesign</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <!-- top navbar -->
+  <nav class="navbar navbar-expand-sm navbar-light bg-light text-info">
+    <div class="container-fluid">
+      <a class="navbar-brand">
+        <h1>&hearts; </h1>
+      </a>
+
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+        style="border: none;">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="navbar-item"> <a href="../home.html">projects </a></li>
+          <li class="navbar-item"> <a href="../about.html">about me </a></li>
+          <li class="navbar-item"> <a href="../fake-resume.pdf" target="_blank">resume </a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- title -->
+  <div class="title">
+    website redesign - a series
+  </div>
+
+  <!-- project menu -->
+  <div class="project-menu">
+    <nav class="navbar navbar-expand-sm navbar-light text-info">
+      <div class="container-fluid">
+
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#projectMenuContent"
+          aria-controls="projectMenuContent" aria-expanded="false" aria-label="Toggle navigation" style="border: none;">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="projectMenuContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="navbar-item"> <a class="nav-link text-info" href="#context">context </a></li>
+            <li class="navbar-item"> <a class="nav-link text-info" href="#usability-access">usability + accessibility
+              </a></li>
+            <li class="navbar-item"> <a class="nav-link text-info" href="#lofi">low-fidelity wireframing</a></li>
+            <li class="navbar-item"> <a class="nav-link text-info" href="#hifi">high-fidelity prototyping</a></li>
+            <li class="navbar-item"> <a class="nav-link text-info" href="#style-guide">visual design style guide</a>
+            </li>
+            <li class="navbar-item"> <a class="nav-link text-info" href="#redesign">redesign + conclusion</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- context -->
+  <div class="subtitle" id="context">
+    context
+  </div>
+  <div class="paragraph">
+    <p>
+      This morning, as I was making coffee, I heard my roommate let out a sigh of frustration.<br><br>
+      “What’s wrong?”, I asked her.<br><br>
+      “Ugh I’ve been trying to submit this thing on this website for hours and it just doesn’t work!”<br><br>
+      Let’s face it, we’ve all experienced problems like these in the past. Whether it’s a website that doesn’t
+      work properly, or you can’t seem to find what you’re looking for, or maybe the website is just straight up
+      ugly.<br><br>
+      In this article, I’m going to walk you through how I redesigned a website. I’ll start by discussing the problems
+      with
+      the original website, then move on to low-fidelity and high-fidelity prototyping, and then show you the final
+      product.
+      This is the website that we're going to be redesigning <a href="http://dancenewyorkiowa.com/" style="color: teal">
+        (link to website here)</a>
+    </p>
+
+  </div>
+  <div class="image">
+    <img src="old-website.jpg" width="500" alt="old-website">
+  </div>
+  <div class="paragraph">
+    <p>
+      Let’s get started!
+    </p>
+  </div>
+
+
+  <!-- usability/accessibility-->
+  <div class="subtitle" id="usability-access">
+    usability + accessibility
+  </div>
+  <div class="heading">
+    <b> usability issues with the old website:</b>
+  </div>
+  <div class="summary">
+    <ul>
+      <li>Lacking consistency: too many different font sizes but no text hierarchy. Text is in too many colors and bad
+        color combinations. Some text is randomly
+        underlined, bolded, or italicized. Not enough padding and whitespace between specific elements </li>
+      <li>Website is not responsive i.e. its appearance does not adapt to the screen size or the device that it is
+        viewed on </li>
+      <li>No structure/columns/grid - text is randomly dispersed around the page</li>
+      <li> Poor contrast between bright blue navigation bar and background</li>
+      <li>A lot of text at the bottom of the page</li>
+      <li>Facebook icon is stretched</li>
+      <li> Poor quality images </li>
+    </ul>
+  </div>
+  <div class="heading">
+    <b> accessibility issues with the old website: </b>
+  </div>
+  <div class="summary">
+    <ul>
+      <li>Missing language: language is needed to allow screen readers to read content in appropriate language</li>
+      <li>No page regions or ARIA landmarks defined: This makes it difficult for a screen reader to know in which order
+        to read the content </li>
+      <li> Underlined text does not link to anywhere, even though underlines universally indicate linked text</li>
+      <li>Some text are heading elements but not true headings</li>
+    </ul>
+  </div>
+
+  <!-- lofi wireframing -->
+  <div class="subtitle" id="lofi">
+    low-fidelity wireframing
+  </div>
+  <div class="paragraph">
+    <p>
+      First, I used balsamiq to create low-fidelity wireframes for a desktop, tablet, and mobile device.
+    </p>
+  </div>
+
+  <div class="heading">
+    <b> desktop wireframe</b>
+  </div>
+  <div class="image">
+    <img src="lofi-desktop.png" width="800" alt="lofi-desktop">
+  </div>
+  <div class="heading">
+    <b> <br>tablet wireframe</b>
+  </div>
+  <div class="image">
+    <img src="lofi-tablet.png" width="800" alt="lofi-tablet">
+  </div>
+  <div class="heading">
+    <b> <br>mobile wireframe</b>
+  </div>
+  <div class="image">
+    <img src="lofi-mobile.png" width="1000" alt="lofi-mobile">
+  </div>
+
+  <!-- hifi prototyping-->
+  <div class="subtitle" id="hifi">
+    high-fidelity prototyping
+  </div>
+  <div class="paragraph">
+    <p>
+      Then, I used figma to create high-fidelity prototypes for a desktop, tablet, and mobile device.
+    </p>
+  </div>
+  <div class="heading">
+    <b> desktop prototype</b>
+  </div>
+  <div class="image">
+    <img src="desktop.svg" width="1000" alt="hifi-desktop">
+  </div>
+  <div class="heading">
+    <b> <br>tablet prototype</b>
+  </div>
+  <div class="image">
+    <img src="tablet.svg" width="1000" alt="hifi-tablet">
+  </div>
+  <div class="heading">
+    <b> <br>mobile prototype</b>
+  </div>
+  <div class="image">
+    <img src="mobile.svg" width="1000" alt="hifi-mobile">
+  </div>
+
+
+  <!-- visual design style guide-->
+  <div class="subtitle" id="style-guide">
+    visual design style guide
+  </div>
+  <div class="image">
+    <img src="visual-design-guide.svg" alt="visual-design-guide">
+
+  </div>
+
+  <!-- redesign link-->
+  <div class="subtitle" id="redesign">
+    redesign
+  </div>
+  <div class="paragraph">
+    <p>
+      And finally, <a href="redesign.html"> here </a>is the link to our beautiful final product &hearts;<br><br>
+    </p>
+  </div>
+
+  <!-- redesign observations-->
+  <div class="heading">
+    <b> design choices + takeaways:</b>
+  </div>
+  <div class="summary">
+    <ul>
+      <li> The redesigned website is responsive i.e. adapts to the size of the browser and to different devices</li>
+      <li> Looks good when changing the font size of the browser</li>
+      <li>Website includes language attribute which allows screen readers to know which language to read it in</li>
+      <li>Website has a grid structure which allows a screen reader to know in which order to read the contents</li>
+      <li>Instead of having regions with big blocks of text, the redesigned website would link to pages with additional
+        information e.g. the "events" image would link to a page containing information on upcoming events.</li>
+      <li> The opacity of the images change on hover to indicate to the user that they are clickable.</li>
+      <li> The background color of the navbar elements change on hover to indice to the user that they are clickable.
+      </li>
+    </ul>
+  </div>
+
+  <div class="subtitle" id="conclusion">conclusion</div>
+  <div class="paragraph">
+    <p>
+      This project taught me the process of turning low-fidelity wireframes and high-fidelity mockups into a responsive
+      website using HTML and CSS. It
+      showed me the importance of creating mockups as they forced me to think about every aspect of my website,
+      including the structure, content, and visual properties.
+      Moreover, it opened my eyes to factors that I might have overlooked in the past, such as how my website would be
+      read by a screenreader, or how it would look if the font size was increased.
+    </p>
+  </div>
+
+  </div>
+
+  <!-- sources-->
+  <div class="heading" style="text-align: left">
+    <b> sources used in redesign process:</b>
+  </div>
+  <div class="sources">
+    <p>
+      You can find the list of sources <a
+        href="https://docs.google.com/document/d/1cM-CFSAOSSIXo8eRedhEeZW_yg8_cslTjz2k_PmjAEU/edit?usp=sharing">
+        here</a>
+    </p>
+  </div>
+  <div>
+    <hr>
+  </div>
+  <footer class="myfooter">
+    <div class="copyright"> coded with &hearts; | anonymous</div>
+    <div class="social">
+      <a href=""><i class="fa fa-facebook"></i></a>
+      &nbsp;<a href=""><i class="fa fa-instagram"></i></a>
+      &nbsp;<a href=""><i class="fa fa-linkedin"></i></a></div>
+  </footer>
+
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+  <!-- Bootstrap tooltips --> 
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>  
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script> 
+  <!-- Bootstrap core JavaScript --> 
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script> 
+  <!-- MDB core JavaScript --> 
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+
+</body>
+
+</html>

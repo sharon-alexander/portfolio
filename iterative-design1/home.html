@@ -1,0 +1,405 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <title>iterative design</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <!-- top navbar -->
+  <nav class="navbar navbar-expand-sm navbar-light bg-light text-info">
+    <div class="container-fluid">
+      <a class="navbar-brand">
+        <h1>&hearts; </h1>
+      </a>
+
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+        style="border: none;">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="navbar-item"> <a href="../home.html">projects </a></li>
+          <li class="navbar-item"> <a href="../about.html">about me </a></li>
+          <li class="navbar-item"> <a href="../fake-resume.pdf" target="_blank">resume </a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- title -->
+  <div class="title">
+    iterative design - reimagining tappity
+  </div>
+
+  <!-- project navbar -->
+  <div class="project-menu">
+    <nav class="navbar navbar-expand-sm navbar-light text-info">
+      <div class="container-fluid">
+
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#projectMenuContent"
+          aria-controls="projectMenuContent" aria-expanded="false" aria-label="Toggle navigation" style="border: none;">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="projectMenuContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="navbar-item"> <a class="nav-link text-info" href="#context">context </a></li>
+            <li class="navbar-item"> <a class="nav-link text-info" href="#sketching-wireframing">sketching + wireframing
+              </a></li>
+            <li class="navbar-item"> <a class="nav-link text-info" href="#mockups">interactive mockups</a></li>
+            <li class="navbar-item"> <a class="nav-link text-info" href="#user-testing">user testing</a></li>
+            <li class="navbar-item"> <a class="nav-link text-info" href="#conclusion">conclusion</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- context -->
+  <div class="subtitle" id="context">
+    context
+  </div>
+
+  <div class="paragraph">
+    <p>If someone told you to create an educational app for children, what would spring to mind? How would you make an
+      app both <b>educational and fun? </b>
+      Images? Bright colors? Exploding science experiments? Dinosaurs? <br><br>
+
+      This is what my teammates and I were trying to explore. For this project, we had to choose a startup and design a
+      user interface (UI) for that startup without looking
+      at their existing UI. The only thing we could work off of was their concept. <br><br>
+
+      The startup we chose is <a href="https://www.tappityapp.com/">Tappity</a>, an app for kids which teaches 100+
+      science topics with experiments and games. The app is specifically for children aged 4-10 and explores topics,
+      such as
+      space, animals, the human body etc.<br><br>
+      In this article, we're going to walk you through our brainstorming, how we created an interactive prototype, and
+      an analysis of our
+      results after conducting user testing. <br> <br>
+
+      My teammates were Deniz Ozturk, Nicole Cid, and Mariana Alvaro &hearts; <br> <br>
+    </p>
+  </div>
+
+  <!-- sketching + wireframing -->
+  <div class="subtitle" id="sketching-wireframing">
+    sketching + wireframing
+  </div>
+  <div class="heading"> <b>sketches </b></div>
+  <div class="paragraph">
+    <p> First, we made a bunch of 5-minute sketches to get the ideas flowing. We tried different layouts and designs,
+      and brainstormed which elements users would be able to interact with.</p>
+  </div>
+  <div class="image"><img src="sketches.svg" alt="sketch" width="1050"></div>
+  <div class="image"><img src="sketches2.svg" alt="sketch" width="1050"></div>
+
+  <div class="paragraph">
+    <p>
+      Before creating low-fidelity wireframes, we discussed our individual sketches and came to the following decisions:
+    </p>
+  </div>
+  <div class="paragraph">
+    <ul>
+      <li> We thought that it would be fun and engaging for kids to let them create and customize
+        their own avatar.
+        Instead of a human avatar, we wanted a more interesting and gender-neutral creature. Very quickly it became
+        crystal clear - it had to be a dinosaur!
+        We then decided that for consistency, the app's icon should be a dinosaur as well. </li>
+      <li> We decided to cheer up our login page with a "knock, knock, who's there" joke which prompts the user to
+        choose between logging in as the parent or the child </li>
+      <li> We knew that we wanted to split the homepage into three categories: games, experiments, and educational
+        videos. However, we spent a lot of time deciding which word to use
+        for educational videos. We thought that "learning" or "classroom" would put off children so we went with
+        "Discover". </li>
+      <li> Initially, we planned to have a "Games" button which would lead directly to a path made up of individual
+        games across different themes e.g. animals, space, machines etc.
+        Once a child completes all games for a specific theme, they would arrive at an endpoint where they would collect
+        some sort of gear for their avatar. We believe this would incentivize
+        children to continue playing and we used the same logic for educational videos and experiments.
+      </li>
+      <li> Later on, we realized that it would be more intuititve and organized to divide the games into topics and then
+        create
+        a topics page before navigating the user to the games path. For example, if the user clicks on "Animals", it
+        would take them to
+        a path made up of only animal games. This would also allow kids to choose which games they want to play.
+      </li>
+    </ul>
+  </div>
+
+  <div class="heading"><b>low-fidelity wireframes</b></div>
+  <div class="paragraph">After combining our ideas from our sketches, we created low-fidelity wireframes using Balsamiq.
+  </div>
+  <div class="image"> <img src="wireframes.png" alt="wireframe" width="1000"></div>
+
+  <!-- interactive mockups -->
+  <div class="subtitle" id="mockups">
+    interactive mockups
+  </div>
+  <div class="paragraph">
+    After completing our wireframes, it was time to turn our ideas into a high-fidelity interactive mockup. And here you
+    have it friends - Tappity App.
+    <br> <br>Click on the arrows in the top-right corner for full screen.
+  </div>
+  <div class="image">
+    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
+      src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FAch6228ozR4phlQcyoZInp%2FUntitled%3Fnode-id%3D87%253A236%26scaling%3Dscale-down"
+      allowfullscreen></iframe>
+  </div>
+  <div class="heading" style="color: #41b3a3"><b>critique feedback</b></div>
+  <div class="paragraph">
+    <p>The mockup you see above is our final draft after receiving feedback from Nikolas Klein, an industry Product
+      Designer, and other students in our UI/UX
+      class at Brown.
+      The following is a summary of the critique: </p>
+  </div>
+  <div class="paragraph">
+    <ul>
+      <li><b>Make it more clear which is the parent dinosaur and which is the child and use this parent-child
+          relationship throughout the app.</b>
+        Originally, on page 1 (login page), both the parent and child dinosaurs were green. We later changed the parent
+        to orange and for consistency, we also
+        made this change on page 8 and 9 to the astronaut and safari tourguide dinosaurs. This makes it seem as if the
+        child's parent is cheering them on by the "You are doing great!" speech bubble on pages 8 and 9. </li>
+      <li><b> In the game path, highlight where the dinosaur is standing to make it more clear as to which game the
+          child is meant to complete.</b> We decided to highlight the game icon with a drop shadow. </li>
+      <li>Overall, Nikolas and our peers liked the choice of colors and graphics and said that the app was easy to
+        navigate. </li>
+    </ul>
+  </div>
+  <div class="paragraph">The changes we made between before the critique and the final mockup above are
+    displayed below:</div>
+  <div class="image"><img src="login-changes.svg" alt="login page before/after" width="1000"></div>
+  <div class="image"><img src="space-changes.svg" alt="spacegame before/after" width="1000"></div>
+  <div class="image"><img src="animal-changes.svg" alt="animal game before/after" width="1000"></div>
+
+  <!-- user testing -->
+  <div class="subtitle" id="user-testing">
+    user testing
+  </div>
+  <div class="paragraph">
+    <p>
+      After creating our interactive high-fidelity mockup, how do we know if it's actually user friendly? This is where
+      user testing comes into play.
+      We submitted our mockup to a remote user testing service <a
+        href="https://www.usertesting.com/">(usertesting.com)</a> and had 3 users test our interface prototype.
+      We gave all 3 users the following tasks and scenario:
+    </p>
+  </div>
+  <div class="heading" style="color: #41b3a3"><b>scenario</b></div>
+  <div class="paragraph">
+    <p>Imagine you're a child and you want to play a "Space" game and then an "Animals" game. Keep in
+      mind
+      that this is a mockup made with prototyping software and not a real website. However, like a real application, you
+      will be able to interact with elements on each page to help you achieve your goal. Since it's a prototype, you
+      won't
+      actually be able to play a game but they would be included in the real application.</p>
+  </div>
+  <div class="heading" style="color: #41b3a3"><b>task</b></div>
+  <div class="paragraph">
+    <p> Play a "Space" game and then an "Animals" game.
+    </p>
+  </div>
+
+  <div class="heading" style="color: #41b3a3"><b>subtasks</b></div>
+  <div class="paragraph">
+    <ol>
+      <li> Without leaving the homepage, what are your initial impressions of the website? Explain your answer.</li>
+      <li>Find where you can play a "Space" game.</li>
+      <li>Now, find where you can play an "Animals" game.</li>
+      <li>What 3 words would you use to describe this application? Explain your answer.</li>
+    </ol>
+  </div>
+
+  <div class="heading" style="color: #41b3a3"><b>results</b></div>
+  <div class="paragraph"> <b>NOTE: when creating our test on usertesting.com, we chose tablet as the device that users
+      should
+      use. However, we were unaware that despite specifying this, users without tablets would still receive this test.
+      This caused formatting issues for 2/3 of our test users, since they were trying to open up the prototype on a
+      computer/mobile instead of a tablet. If we were to conduct this test
+      again, we would either specify that using a tablet is highly recommended in the scenario or
+      change our prototype so that it is responsive to different devices.</b>
+  </div>
+
+  <div class="test-bullet"><b>task 1 </b>- without leaving the homepage, what are your initial impressions of the
+    website?
+  </div>
+
+  <div class="ul-good">
+    <ul>
+      <li>&nbsp;"educational game"</li>
+      <li>&nbsp;"easy to operate"</li>
+      <li>&nbsp;"big pictures"</li>
+      <li>&nbsp;"obvious and clear" </li>
+    </ul>
+  </div>
+  <div class="ul-bad">
+    <ul>
+      <li>&nbsp;“I don’t really consider this a homepage”</li>
+    </ul>
+  </div>
+  <div class="heading"><b> sound on for some giggles!</b></div>
+  <video width="480" height="270" controls>
+    <source src="gif1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="test-bullet"><b>task 2 </b>- find where you can play a "space" game</div>
+  <div class="paragraph">
+    <p style="text-align: left"> The time to complete this task was:</p>
+  </div>
+  <div class="ul-left">
+    <ul>
+      <li> user 1- 0:00 (due to formatting issues, this user could not complete the task) </li>
+      <li> user 2- 0:59 </li>
+      <li> user 3- 1:23</li>
+    </ul>
+  </div>
+
+  <div class="test-bullet"><b>task 3 </b>- find where you can plan an "animals" game</div>
+  <div class="paragraph">We believe that the time taken to perform the next task was significantly shorter because of
+    increased
+    user memorability as the test users got to know the app a bit better: </div>
+  <div class="ul-left">
+    <ul>
+      <li> user 1- 0:00 (due to formatting issues, this user could not complete the task) </li>
+      <li> user 2- 0:15 </li>
+      <li> user 3- 0:33</li>
+    </ul>
+  </div>
+  <video width="480" height="270" controls>
+    <source src="gif2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="test-bullet"><b>task 4 </b>- what 3 words would you use to describe this app?</div>
+  <div class="image"><img src="words.svg" alt="words describing app" width="500"></div>
+
+  <div class="heading" style="color: #41b3a3"><b>post user test questions</b></div>
+  <div class="paragraph">
+    <p> For each user, we included post-test questions about their experience as a whole. Below is a summary of each
+      question:</p>
+  </div>
+  <div class="test-bullet">What frustrated you most about this site?
+  </div>
+
+  <div class="ul-left">
+    <ul>
+      <li> N/A (formatting issues prevented this user from fully exploring all of our pages)</li>
+      <li> user 2- no answer</li>
+      <li> user 3- formatting issues (user opened prototype on mobile instead of tablet)</li>
+    </ul>
+  </div>
+
+  <div class="test-bullet">If you had a magic wand, how would you improve this site?
+  </div>
+
+  <div class="ul-left">
+    <ul>
+      <li> option to personalize name/avatar (note: we did not include this in our prototype but that was our intention
+        for the real app)</li>
+      <li>user 2- no answer</li>
+      <li> user 3- make app responsive to different devices</li>
+    </ul>
+  </div>
+
+  <div class="test-bullet">What did you like about the site?
+  </div>
+
+  <div class="ul-left">
+    <ul>
+      <li>user 1- use of cartoons makes it easy for kids to recognize category, especially if they cannot read well yet.
+        Also liked how buttons were diffent colors</li>
+      <li>user 2- no answer</li>
+      <li>user 3- color, good usability, big pictures, cute animals, lots of playing options</li>
+
+    </ul>
+  </div>
+
+  <div class="test-bullet">How likely are you to recommend this site to a friend or colleague (0=Not at all likely, and
+    10=Very Likely)?
+  </div>
+
+  <div class="ul-left">
+    <ul>
+      <li> user 1- 8</li>
+      <li> user 2- no answer</li>
+      <li> user 3- 8</li>
+
+    </ul>
+  </div>
+
+
+
+  <div class="heading" style="color: #41b3a3"><b>user test videos</b></div>
+  <div class="paragraph">If you would like to watch the user testing videos in their entirety, the links are provided
+    below.</div>
+
+  <div class="ul-left">
+    <ul>
+      <li> <a href="https://drive.google.com/file/d/1uyJyGDK9KvYy0fhvMG4aW3zHgE9LrRwz/view?usp=sharing"> user 1</a>
+        (note that user1 had serious formatting issues)</li>
+      <li> <a href="https://drive.google.com/file/d/1xKunwW8YpZs7uYCRibyG2hOh9knM5RkT/view?usp=sharing">user 2 </a></li>
+      <li> <a href="https://drive.google.com/file/d/1hWr4bTVxFYeJUDz4DdkcFF5u-gdY2SwU/view?usp=sharing"> user 3</a></li>
+    </ul>
+  </div>
+
+
+  <div class="subtitle" id="#conclusion">conclusion</div>
+  <div class="paragraph">
+    <p>
+
+      This project taught me the importance of thinking about not just what you're designing but <i> who</i> you're
+      designing for. It was super interesting and exciting to put ourselves in the shoes of a child.
+      This project also made me think about interaction design and how to convey to a user that an element is
+      interactable on different devices. For example, elements can change when hovered over on a computer screen,
+      but a user can't hover on a tablet or mobile. Moreover, the feedback we received from the user testing portion of
+      this project was extremely helpful. It made me realize that things that might be obvious to the designer may not
+      be to the user.
+    </p>
+  </div>
+
+  <div class="heading" style="color: #41b3a3"><b> sources</b></div>
+  <div class="sources">
+    <p>
+      You can find our list of sources <a
+        href="https://docs.google.com/document/d/1zKCqRZuVe-2p_VReWIA8UdpcakEgyAnBFuP-ct-9iqI/edit?usp=sharing">
+        here</a>
+    </p>
+  </div>
+  <div>
+    <hr>
+  </div>
+  <footer class="myfooter">
+    <div class="copyright"> coded with &hearts; | anonymous</div>
+    <div class="social">
+      <a href=""><i class="fa fa-facebook"></i></a>
+      &nbsp;<a href=""><i class="fa fa-instagram"></i></a>
+      &nbsp;<a href=""><i class="fa fa-linkedin"></i></a></div>
+  </footer>
+
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+  <!-- Bootstrap tooltips --> 
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>  
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script> 
+  <!-- Bootstrap core JavaScript --> 
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script> 
+  <!-- MDB core JavaScript --> 
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+</body>
+
+</html>

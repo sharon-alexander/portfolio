@@ -1,0 +1,227 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+} 
+
+.title {
+    text-align: center;
+    padding: 5%;
+    font-family: "Lato";
+    font-size: 45px;
+    color: teal;
+}
+
+.project-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.subtitle {
+    text-align: center;
+    padding: 2%;
+    font-family: "Lato";
+    font-size: 30px;
+    color: teal;
+}
+
+.paragraph {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    font-family: "Lato";
+    font-size: 18px;
+    padding: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+
+.heading {
+
+    display: flex;
+    justify-content: center;
+    font-family: "Lato";
+    font-size: 18px;
+    padding: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.questions {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    font-family: "Lato";
+    font-size: 16px;
+    font-weight: bold;
+    padding: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: steelblue;
+
+}
+
+.interview-takeaways {
+    display: flex;
+    text-align: justify;
+    font-family: "Lato";
+    font-size: 16px;
+    padding: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    
+}
+
+li {
+    margin: 20px;
+}
+
+nav .navbar-nav li a{
+    color: #20B2AA!important;
+}
+
+nav .navbar-brand{
+    color: #20B2AA!important;
+    padding-left: 1%;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    font-family: "Lato";
+    font-size: 20px; 
+    color: teal;
+    padding: 2%;
+}
+
+.myfooter {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 2%;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 7%;
+}
+
+i.fa {
+    display: inline-block;
+    border-radius: 60px;
+    padding: 0.5em 0.6em;
+    color: white;
+    background-color: #de6e4b;
+    width: 28px;
+    text-align: center;
+  
+  }
+
+hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 80%;               
+    background-color:#20B2AA;
+    height: 1px;
+}
+
+@media only screen and (max-width: 770px) { /* tablet size */
+
+    img {
+        width: 600px;
+    }
+    
+    .title {
+        font-size: 38px;
+    }
+    
+    .subtitle {
+        font-size: 26px;
+    }
+    
+    .paragraph {
+        font-size: 16px;
+        
+    }
+    
+    .heading {
+        font-size: 16px;
+    
+    }
+    
+    .questions {
+        font-size: 14px;
+    
+    
+    }
+    
+    .interview-takeaways {
+        font-size: 14px;
+    
+    }
+
+    .copyright {
+        font-size: 16px; 
+    }
+
+}
+
+
+@media only screen and (max-width: 450px) { /* mobile size */
+
+img {
+    width: 300px;
+}
+
+.title {
+    font-size: 30px;
+}
+
+.subtitle {
+    font-size: 22px;
+}
+
+.paragraph {
+    font-size: 14px;
+    
+}
+
+.heading {
+    font-size: 14px;
+
+}
+
+.questions {
+    font-size: 12px;
+
+}
+
+.interview-takeaways {
+    font-size: 12px;
+
+}
+.copyright {
+    font-size: 14px; 
+}
+
+}
