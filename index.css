@@ -259,6 +259,7 @@ img:hover {
     .single-project {
         display: grid;
         grid-template-columns: 1fr;
+        width: 100%;
         grid-template-rows: auto;
     }
 
