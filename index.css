@@ -190,7 +190,7 @@ img:hover {
     }
 }
 
-@media only screen and (max-width: 450px) { /* mobile size */
+@media only screen and (max-width: 501px) { /* mobile size */
 
     .title {
         font-size: 24px;
