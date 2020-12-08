@@ -93,10 +93,10 @@ nav .navbar-brand{
 }
 
 
-@media only screen and (max-width: 770px) { /* tablet size */
+@media only screen and (max-width: 770px) and (min-width: 501px){ /* tablet size */
 
     img {
-        width: 330px;
+        width: 100%;
     }
 
     .text {
@@ -116,11 +116,12 @@ nav .navbar-brand{
 
 
 
-@media only screen and (max-width: 450px) { /* mobile size */
+@media only screen and (max-width: 501px) { /* mobile size */
 
     .main-container {
         grid-template-columns: 1fr;
         padding: 10%;
+        width: 100%;
     }
     .text {
         order: 1;
@@ -133,7 +134,7 @@ nav .navbar-brand{
     }
 
     img {
-        width: 300px;
+        width: 100%;
     }
 
     .text {

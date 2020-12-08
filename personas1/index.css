@@ -81,7 +81,13 @@ body {
     display: flex;
     justify-content: center;
     padding: 1%;
+    width: 100%;
     
+}
+
+img {
+    width: 90%;
+    height: 100%;
 }
 
 li {
@@ -147,9 +153,9 @@ hr {
 
 @media only screen and (max-width: 770px) { /* tablet size */
 
-    img {
+    /* img {
         width: 600px;
-    }
+    } */
     
     .title {
         font-size: 38px;
@@ -190,8 +196,8 @@ hr {
 @media only screen and (max-width: 450px) { /* mobile size */
 
 img {
-    width: 300px;
-}
+    /* width: 300px;
+} */
 
 .title {
     font-size: 30px;

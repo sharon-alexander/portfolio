@@ -59,7 +59,14 @@ body {
     justify-content: center;
     padding: 2%;
     margin: auto;
+    width: 100%;
+
     
+}
+
+img {
+    width: 90%;
+    height: 100%;
 }
 
 .summary {
@@ -136,9 +143,9 @@ hr {
 
 @media only screen and (max-width: 770px) { /* tablet size */
 
-    img {
+    /* img {
         width: 500px;
-    }
+    } */
     
     .title {
         font-size: 38px;
@@ -170,9 +177,9 @@ hr {
 
 @media only screen and (max-width: 450px) { /* mobile size */
 
-    img {
+    /* img {
         width: 300px;
-    }
+    } */
     
     .title {
         font-size: 30px;
