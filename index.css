@@ -178,7 +178,7 @@ img:hover {
 }
 
 
-@media only screen and (max-width: 770px) { /* tablet size */
+@media only screen and (max-width: 770px) and (orientation: portrait){ /* tablet size */
 
     .title {
         font-size: 50px;
@@ -190,7 +190,7 @@ img:hover {
     }
 }
 
-@media only screen and (max-width: 501px) { /* mobile size */
+@media only screen and (max-width: 501px) and (orientation: portrait) { /* mobile size */
 
     .title {
         font-size: 24px;
