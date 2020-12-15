@@ -3,7 +3,7 @@
 
 document.addEventListener('DOMContentLoaded',function(event){
   // array with texts to type in typewriter
-  var dataText = ["computer science @brown", "salsa dancer", "enjoys warm weather", "easily amused", "took 3 gap years", "drinks coffee black", "scared of flying"];
+  var dataText = ["computer science @brown", "salsa dancer", "israeli, american, namibian", "enjoys warm weather", "easily amused", "took 3 gap years", "drinks coffee black", "scared of flying"];
   
   // type one text in the typwriter
   // keeps calling itself until the text is finished
@@ -42,4 +42,20 @@ document.addEventListener('DOMContentLoaded',function(event){
   }
   // start the text animation
   StartTextAnimation(0);
+});
+
+/* scroll up button from https://codepen.io/matthewcain/pen/ZepbeR */
+var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
 });

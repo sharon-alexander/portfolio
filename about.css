@@ -62,8 +62,8 @@ i.fa {
   }
 
 img {
-    /* border-radius: 20px; bring back after pic  */
-    width: 580px;
+    /* border-radius: 20px; */
+    width: 490px;
     display: flex;
 
   }
@@ -90,6 +90,15 @@ nav .navbar-brand{
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%; 
+}
+
+#footer-name {
+    color: teal;
+    text-decoration: teal;
+}
+
+#footer-name:hover {
+    color: #de6e4b;
 }
 
 

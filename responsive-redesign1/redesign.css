@@ -62,6 +62,11 @@ html {
     text-align: center;
   }
 
+.single-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
 
 .img-fluid {
     height: 100%;
@@ -85,15 +90,6 @@ html {
     padding-top: 10%;
 
   }
-
-.col {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    object-fit: cover;
-    object-fit: contain;
-    font-family: "Lato";
-}
 
 .container {
     padding: 5%;
@@ -135,8 +131,21 @@ html {
     border-radius: 50%;
   }
 
+.contact {
+    text-align: right;
+    padding: 5%;
+}
 
-@media only screen and (max-width: 767px) { /* tablet size */
+.social {
+    padding: 5%
+}
+
+.video{
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 767px) and (min-width: 501px){ /* tablet size */
 	.slogan{
 		font-size: 20px;
     }
@@ -165,10 +174,10 @@ html {
         object-fit: contain;
       }
 
+    }
 
 
-
-@media only screen and (max-width: 450px) { /* mobile size */
+@media only screen and (max-width: 501px) { /* mobile size */
 
     .slogan-mobile {
         display: block;
@@ -197,30 +206,37 @@ html {
         object-fit: contain;
     }
 
+    .single-row {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding: 3%;
+    }
+
+    .social {
+        text-align: center;
+    }
+
+    .contact {
+        text-align: center;
+    }
+
+
     .grid {
         flex-direction: column;
       }
 
-    .col {
-        width: 100%;
-        max-width: 100%;
-        object-fit: cover;
-        object-fit: contain;
-        text-align: center;
-    }
 
 
     .testimonial {
         font-family: "Lato";
         font-size: 20px;
         padding: 10%;
-        text-align: center;
+        text-align: center!important;;
   
     }
 
     .image-text {
-        /* display: block; */
-        /* justify-content: center; */
         position: absolute;
         font-family: "Lato";
         color: white;
@@ -231,8 +247,5 @@ html {
         transform: translate(50%, 12.5%);
     
       }
-
-
-
 
 }
