@@ -21,7 +21,14 @@
       <a class="navbar-brand">
         <h1>&hearts; </h1>
       </a>
-      <div class="collapse navbar-collapse">
+
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+        style="border: none;">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="navbar-item"><a href="../home.html">projects </a> </li>
           <li class="navbar-item"> <a href="../about.html">about me </a></li>
@@ -40,7 +47,13 @@
   <div class="project-menu">
     <nav class="navbar navbar-expand-sm navbar-light text-info">
       <div class="container-fluid">
-        <div class="collapse navbar-collapse">
+
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#projectMenuContent"
+          aria-controls="projectMenuContent" aria-expanded="false" aria-label="Toggle navigation" style="border: none;">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="projectMenuContent">
           <ul class="navbar-nav ml-auto">
             <li class="navbar-item"> <a class="nav-link text-info" href="#context">context </a></li>
             <li class="navbar-item"> <a class="nav-link text-info" href="#app"> my application
@@ -71,8 +84,7 @@
     </p>
   </div>
   <div class="heading"> studio prototype </div>
-  <div class="image"><img src="prototype1.svg" style="margin: 2%" width="300px"><img src="prototype2.svg"
-      style="margin: 2%" width="300px"></div>
+  <div class="image"><img src="prototype1.svg" style="margin: 2%"><img src="prototype2.svg" style="margin: 2%"></div>
 
   <div class="subtitle" id="app">my application - baby bops </div>
 
@@ -85,7 +97,7 @@
     </p>
   </div>
 
-  <div class="image"><img src="babybops.png" width="760px" style="margin: 2%"><img src="mobile.png" width="200px"
+  <div class="image"><img src="babybops.png" id="desktop" style="margin: 2%"><img src="mobile.png" id="mobile"
       style="margin: 2%"></div>
 
   <div class="paragraph">
