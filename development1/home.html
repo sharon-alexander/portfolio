@@ -1,0 +1,160 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <title>website redesign</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <!-- top navbar -->
+  <nav class="navbar navbar-expand-sm navbar-light bg-light text-info">
+    <div class="container-fluid">
+      <a class="navbar-brand">
+        <h1>&hearts; </h1>
+      </a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="navbar-item"><a href="../home.html">projects </a> </li>
+          <li class="navbar-item"> <a href="../about.html">about me </a></li>
+          <li class="navbar-item"> <a href="../sharon_resume_final.pdf" target="_blank">resume </a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- title -->
+  <div class="title">
+    development - baby bops
+  </div>
+
+  <!-- project menu -->
+  <div class="project-menu">
+    <nav class="navbar navbar-expand-sm navbar-light text-info">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="navbar-item"> <a class="nav-link text-info" href="#context">context </a></li>
+            <li class="navbar-item"> <a class="nav-link text-info" href="#app"> my application
+              </a></li>
+            <li class="navbar-item"> <a class="nav-link text-info" href="#usability">usability principles</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- context -->
+  <a id="button"></a>
+  <div class="subtitle" id="context">
+    context
+  </div>
+  <div class="paragraph">
+    <p> You just finished making dinner after a long day at work and now it's time to put the baby to sleep. What
+      better way than with a playlist of all of your baby's favorite lullabies?
+      Or maybe it's your child's birthday party and you don't know what type of music to play. No worries - check out
+      the most liked albums on Baby Bops to see which songs kids like these days.
+      <br><br>
+      During one of our studios for CSCI 1300: User Interfaces and User Experiences, my partner and I created a
+      prototype of a spotify for babies application. I thought that turning this prototype into an application would
+      be a fun way to learn React.
+
+    </p>
+  </div>
+  <div class="heading"> studio prototype </div>
+  <div class="image"><img src="prototype1.svg" style="margin: 2%" width="300px"><img src="prototype2.svg"
+      style="margin: 2%" width="300px"></div>
+
+  <div class="subtitle" id="app">my application - baby bops </div>
+
+  <div class="paragraph">
+    <p> My application, Baby Bops, is a music streaming app specifically designed for babies and young children. Since
+      babies wouldn't be directly interacting with the application, but rather parents, I tried to make the interface
+      both parent and child-friendly. My application displays 12 different albums and for each one, you can see how many
+      likes it has, how many songs are in the album, and a button which allows you to add the album to your playlist.
+      Below is a screenshot of the app in desktop view and mobile view.
+    </p>
+  </div>
+
+  <div class="image"><img src="babybops.png" width="760px" style="margin: 2%"><img src="mobile.png" width="200px"
+      style="margin: 2%"></div>
+
+  <div class="paragraph">
+    <p> Users can also filter albums by genre (lullabies or movie soundtracks) or by mood (energetic, sleepy, or
+      sing-along). So if it's naptime,
+      users can conveniently filter the albums so that only lullabies are displayed. If your child had too much candy
+      and is jumping all over the place, you can choose to only see albums with energetic tunes.
+      The app also has a sorting functionality which allows the user to sort the albums by how many likes they have. So
+      if you're not sure what type of music kids like these days,
+      you can easily sort the albums by most to least likes and see which ones are the most popular. Lastly, once you
+      add albums to your playlist,
+      it displays how many songs are in your playlist and also allows you to remove albums if you wish to.
+
+      <br> <br> Here is the <a href="https://vast-oasis-46086.herokuapp.com/"> link</a> to try it yourself &hearts;<br>
+      Link to GitHub repo <a href="https://github.com/sharon-alexander/baby-bops/tree/main/src"> here </a></p>
+    </p>
+  </div>
+
+  <div class="subtitle" id="usability">usability principles </div>
+
+  <div class="paragraph">
+    As I mentioned earlier, I aimed to make Baby Bop's interface easily usable by both parents and young children. I
+    used Nielsen's principles for design and other principles we discussed in class to help me achieve this:
+  </div>
+  <div class="summary">
+    <ul>
+      <li><b> accessibility:</b> the app is responsive in order to make it acecssible on different devices
+      </li>
+      <li><b>help + documenation:</b> the "add your favorite albums to your playlist!" subheading instructs the user on
+        how to use the app </li>
+      <li><b>help users with errors:</b> if a user tries to add the same album to their playlist more than once, an
+        alert appears on the browser </li>
+      <li><b>minimal text:</b> in order to appeal to children, I tried to have as little text as possible </li>
+      <li><b>familiarity + affordances:</b> I decided to use a heart icon for the number of likes an album has and a
+        music library icon for the number of songs in an album since I belive both of these icons are intuitive and
+        familiar from other applications</li>
+      <li><b>aesthetic:</b> I decided to use bright colors to appeal to children. In addition, I decided to change the
+        color of the albums once a user puts them in their playlist to help them easily differentiate between what's in
+        their playlist and what isn't </li>
+    </ul>
+  </div>
+
+  <div>
+    <hr>
+  </div>
+  <footer class="myfooter">
+    <div class="copyright"> coded with &hearts; |&nbsp;<a href="../home.html" id="footer-name"> sharon alexander</a>
+    </div>
+    <div class="social">
+      <a href="https://www.facebook.com/sharon.alexander.587/"><i class="fa fa-facebook"></i></a>
+      &nbsp;<a href="https://www.instagram.com/swagroni/"><i class="fa fa-instagram"></i></a>
+      &nbsp;<a href="https://www.linkedin.com/in/sharon-alexander-2b5184171/"><i class="fa fa-linkedin"></i></a></div>
+  </footer>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+  <!-- Bootstrap tooltips --> 
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>  
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script> 
+  <!-- Bootstrap core JavaScript --> 
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script> 
+  <!-- MDB core JavaScript --> 
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+  <script src="development.js"></script>
+
+
+</body>
+
+</html>
