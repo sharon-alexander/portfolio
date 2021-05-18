@@ -1,0 +1,275 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <title>the university web</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <!-- top navbar -->
+  <nav class="navbar navbar-expand-sm navbar-light bg-light text-info">
+    <div class="container-fluid">
+      <a class="navbar-brand">
+        <h1>&hearts; </h1>
+      </a>
+
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+        style="border: none;">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="navbar-item"><a href="../home.html">projects </a> </li>
+          <li class="navbar-item"> <a href="../about.html">about me </a></li>
+          <li class="navbar-item"> <a href="../sharon_resume_final.pdf" target="_blank">resume </a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- title -->
+  <div class="title">
+    the university web
+  </div>
+
+  <!-- project menu -->
+  <div class="project-menu">
+    <nav class="navbar navbar-expand-sm navbar-light text-info">
+      <div class="container-fluid">
+
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#projectMenuContent"
+          aria-controls="projectMenuContent" aria-expanded="false" aria-label="Toggle navigation" style="border: none;">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="projectMenuContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="navbar-item"> <a class="nav-link text-info" href="#context">context </a></li>
+
+            <li class="navbar-item"> <a class="nav-link text-info" href="#specs"> app breakdown
+              </a></li>
+            <li class="navbar-item"> <a class="nav-link text-info" href="#design">design choices + accessibility</a>
+            </li>
+            <li class="navbar-item"> <a class="nav-link text-info" href="#security">security + privacy</a></li>
+
+            <li class="navbar-item"> <a class="nav-link text-info" href="#future">going forward</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <a id="button"></a>
+
+  <div class="paragraph">
+    <iframe src="https://drive.google.com/file/d/131jlY_nhA-EwQpl46VJSxNavkn9IUYA5/preview" width="640" height="480">
+    </iframe>
+  </div>
+
+  <!-- context -->
+  <div class="subtitle" id="context">
+    context
+  </div>
+  <div class="paragraph">
+    <p> If you've ever applied to colleges in the US (or anywhere else in the world), you probably remember the many
+      hours of college research. College websites,
+      social media, talking to friends and alumni, campus tours... you name it. It can be tiring and overwhelming.
+      <br><br>
+      The University Web aims to help high school students decide where they want to go to college by allowing them to
+      get a look and feel of what universities look like
+      on the inside. During Spring 2021, I worked with three other Brown students on this app: Hunter Karas (who came
+      up with the idea), Aanchal Sheth, and William Bednarz.
+    </p>
+  </div>
+
+  <!-- app breakdown-->
+  <div class="subtitle" id="specs">app breakdown </div>
+
+  <div class="paragraph">
+    Our app has two primary users - college students who will post and view content, and high school students who will
+    only view
+    content.
+    According to the email that users sign up with, our app will check whether they are a college student or not.
+    Therefore, college students
+    that want to post content will have to sign up with a college email, along with a password. High school students can
+    sign up with any email they want. If a user is a high school student, they will have the ability to view posts, but
+    not create them.
+    <br><br>
+    We decided to go with a UI similar to that of Instagram where users can follow different universities and then
+    scroll through content that college students from those universities post.
+    We also think that an Instagram-like UI will make navigating the app easier since most users are probably familiar
+    with Instagram's layout.
+  </div>
+
+  <div class="heading"> technology used </div>
+  <div class="summary">
+    <ul>
+      <li> <b>Frontend:</b> React Native </li>
+      <li> <b> Backend:</b> Python and Flask</li>
+      <li> <b> Database:</b> Firebase</li>
+    </ul>
+  </div>
+
+  <div class="heading"> page breakdown </div>
+  <div class="paragraph">Below is a breakdown of each page of the app, with a list of the features on that page. </div>
+  <div class="summary">
+    <ul>
+      <li><b>Login + Signup page:</b> username and password authentication</li>
+      <li><b>Feed page:</b> allows users to scroll through content posted by college students. Also includes:
+        <ul>
+          <li>like/unlike functionality, by clicking on heart icon or double tapping an image</li>
+          <li> Report button</li>
+          <li>Navigation to university profile page by clicking on the university's name in a post's header</li>
+        </ul>
+      </li>
+      <li><b>University profile:</b> Aggregates all of the posts that college students from that university have posted
+        and then classifies them into 4 categories: campus life, social life, academics, food. This page includes the
+        following features:
+        <ul>
+          <li>Navigation bar that allows user to toggle between categories (campus, social, academics, food)</li>
+          <li>Settings button</li>
+        </ul>
+      </li>
+      <li><b>Student profile: </b>Aggregates all of the posts that a student has posted (if they are a college student) and all of that user's liked
+          posts
+        <ul>
+          <li>Navigation bar that allows user to toggle between 2 categories: all posts and liked posts </li>
+          <li>Settings button</li>
+        </ul>
+      </li>
+      <li><b>Create post page:</b> Allows user to create a post, either by taking a photo or uploading a photo from
+        camera roll
+        <ul>
+          <li> Accept camera permissions</li>
+          <li>Take photo (user can also flip camera to back mode) or upload photo</li>
+          <li>Navigate to photo editing page where user can write a caption, choose a category, and then post to the
+            feed</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="paragraph">
+    <iframe src="https://drive.google.com/file/d/131jlY_nhA-EwQpl46VJSxNavkn9IUYA5/preview" width="640" height="480">
+    </iframe>
+  </div>
+
+
+  <!-- design choices + accessibility  -->
+  <div class="subtitle" id="design">design choices + accessibility</div>
+
+  <div class="summary">
+    <ul>
+      <li>We decided to create a mobile app as opposed to a web app. We thought this would be more practical since users that post 
+        will need to take photos and upload photos.</li>
+      <li>Mimicking popular apps makes it easier for users to navigate our app. </li>
+      <li>In terms of accessibility, we did the following:
+        <ul>
+          <li>tested for compatibility on different devices</li>
+          <li>good color contrast</li>
+          <li>optimal button sizes</li>
+          <li>consistency across the app</li>
+          <li>bottom navigation bar allows users to easily "undo" actions</li>
+          <li>captions for images can be read by screen readers for visually impaired users</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <!-- security + privacy  -->
+  <div class="subtitle" id="security">security + privacy</div>
+
+  <div class="summary">
+    <ul>
+      <li><b>Privacy</b>
+        <ul>
+          <li>We decided to make posts anonymous i.e. the post is under the university's name, not the user's. We also
+            thought that this would encourage
+            users to be more honest.
+          </li>
+          <li>User has to agree to our privacy policy when signing up. This is because our app asks for camera
+            permissions and because we plan to launch our app on the App Store, which requires a privacy policy if the
+            app collects user data. </li>
+        </ul>
+      </li>
+      <li><b>Security</b>
+        <ul>
+          <li>We decided to use a Firebase database because it is an existing API and is certified under major privacy
+            and security standards.</li>
+          <li>Data Validation:
+            <ul>
+              <li>Email and password authentication</li>
+              <li>Checking length of user input to prevent system overload</li>
+              <li>Profanity checker and report button</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <!-- moving forward  -->
+  <div class="subtitle" id="future">going forward</div>
+
+  <div class="summary">
+    <ul>
+      <li>Enhance primary features</li>
+      <li> "In group testing" - try to break the app</li>
+      <li> "Friend testing"</li>
+      <li> A/B testing and analytics</li>
+      <li>Deployment - we will first open it up to Brown students and once we gain a user base, we plan to approach
+        other schools.</li>
+      <li>Secondary features
+        <ul>
+          <li>Allow users to post different media types e.g. text, videos</li>
+          <li>Enable commenting on posts</li>
+          <li>Create a "trending" page, which allows users to view popular posts (similar to Tik Tok)</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+
+  <div>
+    <hr>
+  </div>
+  <footer class="myfooter">
+    <div class="copyright"> coded with &hearts; |&nbsp;<a href="../home.html" id="footer-name"> sharon alexander</a>
+    </div>
+    <div class="social">
+      <a href="https://www.facebook.com/sharon.alexander.587/"><i class="fa fa-facebook"></i></a>
+      &nbsp;<a href="https://www.instagram.com/swagroni/"><i class="fa fa-instagram"></i></a>
+      &nbsp;<a href="https://www.linkedin.com/in/sharon-alexander-2b5184171/"><i class="fa fa-linkedin"></i></a>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+  <script src="uniweb.js"></script>
+
+
+</body>
+
+</html>
