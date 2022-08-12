@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>pollit</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <!-- top navbar -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light text-info">
+      <div class="container-fluid">
+        <a class="navbar-brand">
+          <h1>&hearts;</h1>
+        </a>
+
+        <button
+          class="navbar-toggler ml-auto"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="border: none"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="navbar-item"><a href="../home.html">projects </a></li>
+            <li class="navbar-item"><a href="../about.html">about me </a></li>
+            <li class="navbar-item">
+              <a href="../sharon_resume_final.pdf" target="_blank">resume </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- title -->
+    <div class="title">pollit</div>
+
+    <!-- project menu -->
+    <div class="project-menu">
+      <nav class="navbar navbar-expand-sm navbar-light text-info">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler ml-auto"
+            type="button"
+            data-toggle="collapse"
+            data-target="#projectMenuContent"
+            aria-controls="projectMenuContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            style="border: none"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="projectMenuContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="navbar-item">
+                <a class="nav-link text-info" href="#context">context </a>
+              </li>
+
+              <li class="navbar-item">
+                <a class="nav-link text-info" href="#specs"> app breakdown </a>
+              </li>
+              <li class="navbar-item">
+                <a class="nav-link text-info" href="#design"
+                  >design choices + accessibility</a
+                >
+              </li>
+              <li class="navbar-item">
+                <a class="nav-link text-info" href="#security"
+                  >security + privacy</a
+                >
+              </li>
+
+              <li class="navbar-item">
+                <a class="nav-link text-info" href="#future">going forward</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <a id="button"></a>
+
+    <div class="paragraph">
+      <iframe
+        style="border: 1px solid rgba(0, 0, 0, 0.1)"
+        width="800"
+        height="450"
+        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fw9Mv20fBCgbYOu66fjk516%2Fpollit%3Fnode-id%3D6%253A34%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D6%253A34"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <!-- context -->
+    <div class="subtitle" id="context">context</div>
+    <div class="paragraph">
+      <p>
+        For young adults who want to make online polls to help make faster
+        decisions, pollit is a mobile app that allows users to create, vote on,
+        and view polls. During Spring 2022, I started doing the UI design and
+        frontend development for pollit with my two friends from Brown
+        University, Kaan Ozulkulu (backend) and Daniel Civita (backend).
+      </p>
+    </div>
+
+    <!-- app breakdown-->
+    <div class="subtitle" id="specs">app breakdown</div>
+
+    <div class="paragraph">
+      Pollit allows users to do three things: create polls, vote on polls, and
+      view polls on their feed. Think Twitter, but with polls instead of tweets.
+      Users can create public or private polls. Public polls mean that any
+      pollit user can vote. Private polls means that only friends of the poll
+      creator can vote. In the future, we plan to take this a step further by
+      allowing poll creators to choose which specific users are allowed to vote.
+      For example, if you're planning a dinner party with 10 friends, you can
+      ensure that only those 10 friends can vote on food preferences.
+      <br /><br />
+      If the results of a poll are time-sensitive, the creator set the poll's
+      duration i.e. for how long users will be able to vote before the poll is
+      closed.
+      <br /><br />
+      We decided to build a UI which combines aspects from Instagram, TikTok,
+      and BeReal, because we felt these design choices were intuitive.
+    </div>
+
+    <div class="heading">technology used</div>
+    <div class="summary">
+      <ul>
+        <li><b>Frontend:</b> React Native</li>
+        <li><b> Backend:</b> Python</li>
+        <li><b> Database:</b> PostgreSQL</li>
+      </ul>
+    </div>
+
+    <div class="heading">page breakdown</div>
+    <div class="paragraph">
+      Below is a breakdown of each page of the app, with a list of the features
+      on that page.
+    </div>
+    <div class="summary">
+      <ul>
+        <li>
+          <b>Login + Create Account page:</b> username and password
+          authentication. This also includes a link to a Forgot Password page
+        </li>
+        <li>
+          <b>Feed page:</b> allows users to scroll through polls. The feed is
+          split into 3 sections:
+          <ul>
+            <li>
+              <b>My Friends: </b>Allows user to scroll through polls created by
+              their friends.
+            </li>
+            <li>
+              <b>Trending: </b>Allows users to scroll through popular public
+              polls.
+            </li>
+            <li>
+              <b>My Votes: </b>Allows users to scroll through the polls they
+              have already voted on.
+            </li>
+          </ul>
+          Each poll on the feed also includes:
+          <ul>
+            <li>The poll's question</li>
+            <li>The creator of the poll</li>
+            <li>The date the poll was created</li>
+            <li>Time left before the poll expires</li>
+            <li>
+              A clickable component for option 1 and option 2. Once the user
+              votes, they can see the percentage of people who voted for each
+              option.
+            </li>
+            <li>An icon representing whether the poll is private or public</li>
+            <li>
+              A menu icon which, when clicked, allows user to edit or delete the
+              poll if they're the creator, or report the poll if they're not the
+              creator.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <b>Poll details: </b> If a user clicks on a poll on the feed, it
+          navigates them to a page with that specific poll's details,
+          specifically the names of the users that voted for each option.
+          Eventually this will also include a "Share Results" button that will
+          produce a link so that users can send a poll's results to friends
+          through text.
+        </li>
+        <li>
+          <b>User's profile:</b> Includes profile picture, the number of friends
+          that user has, and a navigation bar with two categories: (1) all of
+          the polls the user created and (2) all of the polls the user has voted
+          on
+        </li>
+        <li>
+          <b>Create poll page:</b> Allows user to create a poll. This includes:
+          <ul>
+            <li>Inputting a question</li>
+            <li>Inputting choice 1 and choice 2</li>
+            <li>
+              Choosing whether the poll should be public or private from a
+              dropdown menu
+            </li>
+            <li>
+              Setting the poll duration from a dropdown menu (1 hour, 1 day, 1
+              week, or no limit)
+            </li>
+            <li>Cancel button which navigates user back to feed</li>
+            <li>
+              "Create Poll" button which posts the poll to the backend and
+              navigates user back to feed
+            </li>
+          </ul>
+        </li>
+        <li>
+          <b>Friends page:</b> Allows user to search for users by username,
+          accept or decline friend requests, and view all of their existing
+          friends.
+        </li>
+      </ul>
+    </div>
+
+    <div class="paragraph">
+      <iframe
+        style="border: 1px solid rgba(0, 0, 0, 0.1)"
+        width="800"
+        height="450"
+        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fw9Mv20fBCgbYOu66fjk516%2Fpollit%3Fnode-id%3D6%253A34%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D6%253A34"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <!-- design choices + accessibility  -->
+    <div class="subtitle" id="design">design choices + accessibility</div>
+
+    <div class="summary">
+      <ul>
+        <li>
+          We decided to create a mobile app as opposed to a web app. We thought
+          this would be more practical since users will most likely think of
+          questions to poll throughout the day, when they're not necessarily in
+          front of their computer. This would also enable users to easily and
+          quickly vote on polls from their phone.
+        </li>
+        <li>
+          Mimicking popular apps makes it easier for users to navigate our app.
+        </li>
+        <li>
+          In terms of accessibility, we did the following:
+          <ul>
+            <li>good color contrast</li>
+            <li>optimal button sizes</li>
+            <li>consistency across the app</li>
+            <li>bottom navigation bar allows users to easily "undo" actions</li>
+            <li>
+              captions for images can be read by screen readers for visually
+              impaired users
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- security + privacy  -->
+    <div class="subtitle" id="security">security + privacy</div>
+
+    <div class="summary">
+      <ul>
+        <li>
+          <b>Privacy</b>
+          <ul>
+            <li>
+              We give users the choice between making polls public or private.
+            </li>
+            <li>
+              We will require users to agree to our privacy policy when signing
+              up. This is because we plan to launch our app on the App Store,
+              which requires a privacy policy if the app collects user data.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <b>Security</b>
+          <ul>
+            <li>
+              We decided to use a PostgreSQL database because it is an existing
+              API and is certified under major privacy and security standards.
+            </li>
+            <li>
+              Data Validation:
+              <ul>
+                <li>Email and password authentication</li>
+                <li>
+                  Checking length of user input to prevent system overload
+                </li>
+                <li>Report button</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- moving forward  -->
+    <div class="subtitle" id="future">going forward</div>
+
+    <div class="summary">
+      <ul>
+        <li>Enhance primary features</li>
+        <li>"In group testing" - try to break the app</li>
+        <li>"Friend testing"</li>
+        <li>A/B testing and analytics</li>
+        <li>
+          Deployment - we will first open it up to Brown students and once we
+          gain a user base, we plan to approach other schools.
+        </li>
+        <li>
+          Secondary features
+          <ul>
+            <li>Allow users to share polls through a link</li>
+
+            <li>Allow users to share poll results through a link</li>
+            <li>
+              Allow users to choose which of their friends are allowed to view
+              and vote on a poll
+            </li>
+            <li>
+              Create a suggested friends section, which will suggest users based
+              on mutual friends.
+            </li>
+            <li>Allow users to upload a profile picture.</li>
+            <li>
+              Automation for deleting polls involving hate speech and other
+              forms of profanity.
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <hr />
+    </div>
+    <footer class="myfooter">
+      <div class="copyright">
+        coded with &hearts; |&nbsp;<a href="../home.html" id="footer-name">
+          sharon alexander</a
+        >
+      </div>
+      <div class="social">
+        <a href="https://www.facebook.com/sharon.alexander.587/"
+          ><i class="fa fa-facebook"></i
+        ></a>
+        &nbsp;<a href="https://www.instagram.com/swagroni/"
+          ><i class="fa fa-instagram"></i
+        ></a>
+        &nbsp;<a href="https://www.linkedin.com/in/sharon-alexander-2b5184171/"
+          ><i class="fa fa-linkedin"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <!-- Bootstrap tooltips -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap core JavaScript -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"
+    ></script>
+    <!-- MDB core JavaScript -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"
+    ></script>
+    <script src="uniweb.js"></script>
+  </body>
+</html>
